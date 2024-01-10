@@ -3,7 +3,9 @@
 
     <style name="Theme.Uidproject" parent="android:Theme.Material.Light.DarkActionBar">
         <item name="android:textColor">#000</item>
-        <item name="android:actionBarItemBackground">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:colorPrimary">@color/purple_200</item>
+        <item name="android:colorButtonNormal">@color/hospital_green</item>
     </style>
 
     <style name="Divider">
