@@ -1,34 +1,49 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_temperature"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".TemperatureActivity">
 
-    <SeekBar
-        android:id="@+id/temperatureSlider"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:max="35"
-        android:min="12"
-        android:progress="17" />
+    <uid.project.seekbar.CircularSeekBar
+        android:id="@+id/circularSeekBar1"
+        android:layout_width="397dp"
+        android:layout_height="1511dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:circle_color="@color/blue"
+        app:circle_progress_color="@color/red"
+        app:pointer_color="@color/white"
+        app:circle_stroke_width="40dp"
+        app:end_angle="0"
+        app:max="35"
+        app:start_angle="180" />
 
     <TextView
         android:id="@+id/temperatureDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/temperatureSlider"
+        android:layout_width="280dp"
+        android:layout_height="272dp"
+        android:layout_below="@id/circularSeekBar1"
+        android:layout_gravity="center"
+        android:layout_marginTop="-248dp"
+        android:background="@drawable/circular_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Temperature: 17°C"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Temperature: 17°C"/>
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/onOffButton"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/temperatureDisplay"
-        android:layout_marginTop="161dp"
+        android:layout_width="238dp"
+        android:layout_height="89dp"
         android:layout_centerHorizontal="true"
-        android:text="TURN ON" />
+        android:layout_below="@id/temperatureDisplay"
+        android:layout_marginTop="60dp"
+        android:text="TURN ON"
+        android:textSize="25sp"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="@color/white"/>
 </RelativeLayout>

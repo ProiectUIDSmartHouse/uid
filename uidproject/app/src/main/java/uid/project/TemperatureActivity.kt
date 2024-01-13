@@ -1,39 +1,47 @@
 package uid.project
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.LinearGradient
+import android.graphics.Paint
+import android.graphics.Shader
+import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
-import android.widget.SeekBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
+import androidx.core.content.ContextCompat
+import uid.project.seekbar.CircularSeekBar
 
 class TemperatureActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.temperature)
 
-        val temperatureSlider: SeekBar = findViewById(R.id.temperatureSlider)
+        val temperatureSlider: CircularSeekBar = findViewById(R.id.circularSeekBar1)
         val temperatureDisplay: TextView = findViewById(R.id.temperatureDisplay)
         val onOffButton: Button = findViewById(R.id.onOffButton)
 
-        temperatureSlider.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
+        temperatureSlider.setOnSeekBarChangeListener(object : CircularSeekBar.OnCircularSeekBarChangeListener {
 
+            override fun onProgressChanged(
+                circularSeekBar: CircularSeekBar?,
+                progress: Int,
+                fromUser: Boolean
+            ) {
                 temperatureDisplay.text = "Temperature: ${progress}°C"
             }
 
-            override fun onStartTrackingTouch(seekBar: SeekBar) {
-
-            }
-
-            override fun onStopTrackingTouch(seekBar: SeekBar) {
-
-                val selectedTemperature = seekBar.progress
+            override fun onStopTrackingTouch(seekBar: CircularSeekBar?) {
+                val selectedTemperature = seekBar?.progress
                 val message = "Temperature is set on $selectedTemperature degrees"
                 showToast(message)
+            }
+
+            override fun onStartTrackingTouch(seekBar: CircularSeekBar?) {
 
             }
         })
@@ -48,6 +56,7 @@ class TemperatureActivity : ComponentActivity() {
         }
 
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.home_menu, menu)

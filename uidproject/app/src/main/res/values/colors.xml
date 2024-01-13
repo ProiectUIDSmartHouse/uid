@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="light_pink">#FCF3FB</color>
     <color name="hospital_green">#B9EB72</color>
+    <color name="blue">#0000FF</color>
+    <color name="red">#FF0000</color>
+    <color name="background_temperature">#F0C8EC</color>
+    <color name="purple_temperature">#B78AEC</color>
+
 </resources>
