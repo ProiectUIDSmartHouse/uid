@@ -65,7 +65,7 @@ class TemperatureActivity : ComponentActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.settings -> {
+            R.id.back_home -> {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 return true
