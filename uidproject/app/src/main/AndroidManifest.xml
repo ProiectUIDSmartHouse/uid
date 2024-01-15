@@ -19,6 +19,7 @@
         <activity android:name=".SettingsActivity"/>
         <activity android:name=".IntegrateDeviceActivity"/>
         <activity android:name=".TroubleshootActivity"/>
+        <activity android:name=".AddLightsActivity" />
         <activity android:name=".AddUserActivity"
             android:theme="@style/Theme.AppCompat">
         </activity>

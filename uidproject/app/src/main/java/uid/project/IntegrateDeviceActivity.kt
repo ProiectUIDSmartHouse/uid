@@ -1,11 +1,13 @@
 package uid.project
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
+
 
 class IntegrateDeviceActivity : ComponentActivity() {
 
@@ -26,8 +28,17 @@ class IntegrateDeviceActivity : ComponentActivity() {
 
         buttons.forEach { button ->
             button.setOnClickListener {
+
+                if (button.id == R.id.button_lights) {
+                    openLightsActivity()
+                }
                 deviceAddedTextView.text = getString(R.string.new_device_added, button.text)
                 }
             }
+        }
+
+        private fun openLightsActivity() {
+            val intent = Intent(this, AddLightsActivity::class.java)
+            startActivity(intent)
         }
     }

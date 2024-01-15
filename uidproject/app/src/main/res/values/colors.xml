@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="light_pink">#FCF3FB</color>
     <color name="hospital_green">#B9EB72</color>
+    <color name="room_background_on">#ffd14c</color>
+    <color name="room_background_off">#b9b9bc</color>
+    <color name="room_box">#ffdcf2</color>
 </resources>
