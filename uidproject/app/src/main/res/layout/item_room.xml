@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="8dp"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:orientation="vertical"
+        android:background="#ffdcf2">
+
+        <TextView
+            android:id="@+id/textViewRoomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Room Name"
+            android:padding="8dp"
+            android:textColor="@android:color/white"/>
+
+        <Switch
+            android:id="@+id/switchRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On/Off"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+</GridLayout>
