@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import androidx.activity.ComponentActivity
 
 class SettingsActivity : ComponentActivity() {
@@ -13,16 +14,26 @@ class SettingsActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings)
 
-        Log.d("debugging", "HELLO SETTINGS")
+        findViewById<Button>(R.id.integrate_new_device).setOnClickListener {
+            val intent = Intent(this, IntegrateDeviceActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<Button>(R.id.troubleshoot).setOnClickListener {
+            val intent = Intent(this, TroubleshootActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<Button>(R.id.add_new_user).setOnClickListener {
+            val intent = Intent(this, AddUserActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.home_menu, menu)
         return true
     }
-
-
-    //pula
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

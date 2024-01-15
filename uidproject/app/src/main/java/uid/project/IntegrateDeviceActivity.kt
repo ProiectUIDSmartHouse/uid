@@ -1,0 +1,33 @@
+package uid.project
+
+import android.os.Bundle
+import android.util.Log
+import android.view.Menu
+import android.widget.Button
+import android.widget.TextView
+import androidx.activity.ComponentActivity
+
+class IntegrateDeviceActivity : ComponentActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_integrate_device)
+
+        val deviceAddedTextView = findViewById<TextView>(R.id.textview_device_added)
+
+        val buttons = listOf(
+            findViewById<Button>(R.id.button_tv),
+            findViewById<Button>(R.id.button_phone),
+            findViewById<Button>(R.id.button_lights),
+            findViewById<Button>(R.id.button_radio),
+            findViewById<Button>(R.id.button_thermostat),
+            findViewById<Button>(R.id.button_audio)
+        )
+
+        buttons.forEach { button ->
+            button.setOnClickListener {
+                deviceAddedTextView.text = getString(R.string.new_device_added, button.text)
+                }
+            }
+        }
+    }

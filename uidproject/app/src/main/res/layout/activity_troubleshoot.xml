@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/message_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TV"
+        android:onClick="onCategoryClick"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:id="@+id/tv_category" />
+
+    <LinearLayout
+        android:id="@+id/tv_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingLeft="32dp">
+
+        <TextView
+            android:id="@+id/tv_bedroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bedroom"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/tv_girl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Girl"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/tv_boy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boy"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/tv_grandparents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grandparents"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/tv_living_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Living Room"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/tv_kitchen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kitchen"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lights"
+        android:onClick="onCategoryClick"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:id="@+id/lights_category" />
+
+    <LinearLayout
+        android:id="@+id/lights_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingLeft="32dp">
+        <TextView
+            android:id="@+id/lights_bedroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bedroom"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/lights_living_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Living Room"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/lights_kitchen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kitchen"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thermostat"
+        android:onClick="onCategoryClick"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:id="@+id/thermostat_category" />
+    <LinearLayout
+        android:id="@+id/thermostat_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingLeft="32dp">
+        <TextView
+            android:id="@+id/thermostat_bedroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bedroom"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/thermostat_living_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Living Room"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/thermostat_kitchen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kitchen"
+            android:onClick="onDeviceClick"
+            android:padding="8dp"
+            style="@style/Divider"/>
+    </LinearLayout>
+</LinearLayout>

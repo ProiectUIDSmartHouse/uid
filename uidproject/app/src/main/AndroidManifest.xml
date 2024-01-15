@@ -17,6 +17,11 @@
         <activity android:name=".NotificationsActivity"/>
         <activity android:name=".TemperatureActivity"/>
         <activity android:name=".SettingsActivity"/>
+        <activity android:name=".IntegrateDeviceActivity"/>
+        <activity android:name=".TroubleshootActivity"/>
+        <activity android:name=".AddUserActivity"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"

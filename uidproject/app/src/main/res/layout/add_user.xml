@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new user"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rights: check all that apply."
+        android:paddingTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkboxThermostat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Thermostat"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="TV"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxLights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Lights"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Schedule"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/buttonAddUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/hospital_green"
+    android:textColor="@android:color/white" />
+
+</LinearLayout>

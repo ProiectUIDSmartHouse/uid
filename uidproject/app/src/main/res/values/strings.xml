@@ -20,5 +20,17 @@
     <!-- TV -->
 
     <!-- SETTINGS -->
+    <string name="integrate_new_device">new device</string>
+    <string name="troubleshoot">troubleshoot</string>
+    <string name="add_new_user">new user</string>
+
+    <string name="tv">TV</string>
+    <string name="phone">Phone</string>
+    <string name="lights_button">Lights</string>
+    <string name="radio">Radio</string>
+    <string name="thermostat">Thermostat</string>
+    <string name="audio">Audio</string>
+
+    <string name="new_device_added">A new %1$s was added</string>
 
 </resources>
