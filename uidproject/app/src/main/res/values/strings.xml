@@ -18,6 +18,13 @@
     <!-- NOTIFICATIONS -->
 
     <!-- TV -->
+    <string name="girls_TV">Girl\'s TV</string>
+    <string name="boys_TV">Boys\'s TV</string>
+    <string name="ten_minutes">+10 minutes</string>
+    <string name="reset">reset</string>
+    <string name="reset_all">Reset all timers</string>
+    <string name="turn_off_tvs">Turn off TVs for today</string>
+    <string name="tvs_turned_off">"TV's turned off - turn back on"</string>
 
     <!-- SETTINGS -->
     <string name="integrate_new_device">new device</string>
