@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
         }
 
         kidsTV.setOnClickListener {
-            val intent = Intent(this, KidsTv::class.java)
+            val intent = Intent(this, KidsTvActivity::class.java)
             startActivity(intent)
         }
 

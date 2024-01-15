@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Uidproject"
         tools:targetApi="31">
-        <activity android:name=".KidsTv"/>
+        <activity android:name=".KidsTvActivity"/>
         <activity android:name=".LightsActivity"/>
         <activity android:name=".NotificationsActivity"/>
         <activity android:name=".TemperatureActivity"/>

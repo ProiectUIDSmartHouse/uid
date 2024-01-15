@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="light_pink">#FCF3FB</color>
     <color name="hospital_green">#B9EB72</color>
+    <color name="light_gray">#D3D3D3</color>
 </resources>
