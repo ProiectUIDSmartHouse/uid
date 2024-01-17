@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:color="#F0C8EC">
+
 
     <Button
         android:id="@+id/btnRecord"
@@ -10,7 +12,7 @@
         android:layout_height="200dp"
         android:layout_centerInParent="true"
         android:text="Record"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:background="@drawable/record_button_bg"/>
 
     <TextView
@@ -21,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="Recording"
-        android:textSize="18sp"
+        android:textSize="28sp"
         android:visibility="gone"/>
 
     <Button
@@ -33,5 +35,6 @@
         android:layout_marginTop="16dp"
         android:text="Execute Command"
         android:textSize="18sp"
+        android:background="#B78AEC"
         android:visibility="gone"/>
 </RelativeLayout>
