@@ -20,6 +20,7 @@
         <activity android:name=".IntegrateDeviceActivity"/>
         <activity android:name=".TroubleshootActivity"/>
         <activity android:name=".AddLightsActivity" />
+        <activity android:name=".ScheduleActivity" />
         <activity android:name=".AddUserActivity"
             android:theme="@style/Theme.AppCompat">
         </activity>

@@ -12,6 +12,7 @@ class MainActivity : ComponentActivity() {
     private lateinit var temperature: TextView;
     private lateinit var kidsTV: TextView;
     private lateinit var notifications: TextView;
+    private lateinit var schedule: TextView;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.homepage)
@@ -20,6 +21,7 @@ class MainActivity : ComponentActivity() {
         temperature = findViewById(R.id.temperature)
         kidsTV = findViewById(R.id.kids_tv)
         notifications = findViewById(R.id.notifications)
+        schedule = findViewById(R.id.schedule)
 
         lights.setOnClickListener {
             val intent = Intent(this, LightsActivity::class.java)
@@ -38,6 +40,11 @@ class MainActivity : ComponentActivity() {
 
         notifications.setOnClickListener {
             val intent = Intent(this, NotificationsActivity::class.java)
+            startActivity(intent)
+        }
+
+        schedule.setOnClickListener {
+            val intent = Intent(this, ScheduleActivity::class.java)
             startActivity(intent)
         }
     }

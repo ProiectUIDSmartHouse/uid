@@ -60,5 +60,16 @@
         android:clickable="true"
         android:textSize="25sp" />
     <View style="@style/Divider"/>
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/schedule"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:clickable="true"
+        android:textSize="25sp" />
+    <View style="@style/Divider"/>
 
 </LinearLayout>

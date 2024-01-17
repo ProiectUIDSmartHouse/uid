@@ -242,7 +242,7 @@ class KidsTvActivity : ComponentActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-//        countDownTimer1.cancel()
-//        countDownTimer2.cancel()
+        countDownTimer1.cancel()
+        countDownTimer2.cancel()
     }
 }

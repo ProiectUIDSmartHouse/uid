@@ -6,6 +6,7 @@
     <string name="notifications">Notifications </string>
     <string name="kids_tv">Kids TV</string>
     <string name="settings">Settings</string>
+    <string name="schedule">Schedule</string>
 
     <!-- HOME -->
     <string name="welcome_home">Welcome home!</string>
@@ -39,5 +40,10 @@
     <string name="audio">Audio</string>
 
     <string name="new_device_added">A new %1$s was added</string>
+
+    <!-- SCHEDULE -->
+    <string name="add_event">Add event</string>
+    <string name="event_title">Title</string>
+    <string name="event_time">Time (hh:mm)</string>
 
 </resources>
