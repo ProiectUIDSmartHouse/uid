@@ -22,6 +22,7 @@
         <activity android:name=".AddLightsActivity" />
         <activity android:name=".ScheduleActivity" />
         <activity android:name=".AddUserActivity"/>
+        <activity android:name=".PetFeederActivity"/>
 
         <activity
             android:name=".MainActivity"

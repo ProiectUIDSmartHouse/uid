@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetFeederActivity">
+
+    <EditText
+        android:id="@+id/editTextGrams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter grams"/>
+
+    <Spinner
+        android:id="@+id/spinnerPets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextGrams"
+        android:layout_marginTop="16dp"
+        android:entries="@array/pet_array"/>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerPets"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSetFeeder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:layout_marginTop="16dp"
+        android:text="Set Feeder"/>
+</RelativeLayout>
