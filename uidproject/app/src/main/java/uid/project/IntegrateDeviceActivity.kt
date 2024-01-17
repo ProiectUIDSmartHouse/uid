@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
@@ -33,12 +34,28 @@ class IntegrateDeviceActivity : ComponentActivity() {
                     openLightsActivity()
                 }
                 deviceAddedTextView.text = getString(R.string.new_device_added, button.text)
-                }
             }
         }
+    }
 
-        private fun openLightsActivity() {
-            val intent = Intent(this, AddLightsActivity::class.java)
-            startActivity(intent)
+    private fun openLightsActivity() {
+        val intent = Intent(this, AddLightsActivity::class.java)
+        startActivity(intent)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.settings_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.settings -> {
+                val intent = Intent(this, SettingsActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
         }
     }
+}
