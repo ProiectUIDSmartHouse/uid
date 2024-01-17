@@ -14,6 +14,7 @@ class MainActivity : ComponentActivity() {
     private lateinit var notifications: TextView;
     private lateinit var schedule: TextView;
     private lateinit var petFeeder: TextView
+    private lateinit var voiceCommand: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.homepage)
@@ -24,6 +25,7 @@ class MainActivity : ComponentActivity() {
         notifications = findViewById(R.id.notifications)
         schedule = findViewById(R.id.schedule)
         petFeeder = findViewById(R.id.petFeeder)
+        voiceCommand = findViewById(R.id.voiceCommand)
 
         lights.setOnClickListener {
             val intent = Intent(this, LightsActivity::class.java)
@@ -52,6 +54,10 @@ class MainActivity : ComponentActivity() {
 
         petFeeder.setOnClickListener {
             val intent = Intent(this, PetFeederActivity::class.java)
+            startActivity(intent)
+        }
+        voiceCommand.setOnClickListener {
+            val intent = Intent(this, VoiceCommandActivity::class.java)
             startActivity(intent)
         }
     }
